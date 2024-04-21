@@ -1,0 +1,76 @@
+câu 1
+"question": "What is the output of the following Python code: 5 + 3 * 2?",
+      "options": ["A. 11",
+                  "B. 16",
+                  "C. 6",
+                  "D. 10"],
+      "answer": "C"
+câu 2
+"question": "Which of the following is not a Python data type?",
+      "options": ["A. int",
+                  "B. float",
+                  "C. string",
+                  "D. bool"],
+      "answer": "C"
+câu 3
+"question": "What is the output of the following Python code: 2 ** 3?",
+      "options": ["A. 6",
+                  "B. 8",
+                  "C. 9",
+                  "D. 7"],
+      "answer": "B"
+câu 4
+"question": "What is the output of the following Python code: len([1, 2, 3])?",
+      "options": ["A. 3",
+                  "B. 4",
+                  "C. 5",
+                  "D. 2"],
+      "answer": "A"
+câu 5
+"question": "What is the output of the following Python code: 'hello'[0]?",
+      "options": ["A. h",
+                  "B. e",
+                  "C. l",
+                  "D. 0"],
+      "answer": "A"
+câu 6
+"question": "What is the output of the following Python code: [1, 2, 3] + [4, 5, 6]?",
+      "options": ["A. [1, 2, 3, 4, 5, 6]",
+                  "B. [4, 5, 6, 1, 2, 3]",
+                  "C. [1, 4, 2, 5, 3, 6]",
+                  "D. [1, 2, 3, 4, 5, 6, 7]"],
+      "answer": "A"
+câu 7
+"question": "What is the output of the following Python code: {1: 'one', 2: 'two', 3: 'three'}?",
+      "options": ["A. {'one': 1, 'two': 2, 'three': 3}",
+                  "B. {1: 'one', 2: 'two', 3: 'three'}",
+                  "C. {'one': 1, 2: 'two', 3: 'three'}",
+                  "D. {1: 'one', 2: 'two', 3: 'three', 4: 'four'}"],
+      "answer": "B"
+câu 8
+"question": "What is the output of the following Python code: (1 + 2) * 3?",
+      "options": ["A. 9",
+                  "B. 6",
+                  "C. 7",
+                  "D. 8"],
+      "answer": "A"
+câu 9 
+"question": "What is the output of the following Python code: 'hello' * 3?",
+      "options": ["A. 'hellohellohello'",
+                  "B. 'hellohello'",
+                  "C. 'hellohellohellohello'",
+                  "D. 'helhelhel'"],
+      "answer": "A"
+câu 10
+
+      "question": "What is the output of the following Python code: 10 % 3?",
+      "options": ["A. 3",
+                  "B. 1",
+                  "C. 0",
+                  "D. 2"],
+      "answer": "B"
+
+
+
+
+
