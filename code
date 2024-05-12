@@ -1,103 +1,100 @@
+import random
+
+# Define the question bank
 questions = [
-  {
-      "question": "What is the output of the following Python code: 5 + 3 * 2?",
-      "options": ["A. 11",
-                  "B. 16",
-                  "C. 6",
-                  "D. 10"],
-      "answer": "C"
-  },
-  {
-      "question": "Which of the following is not a Python data type?",
-      "options": ["A. int",
-                  "B. float",
-                  "C. string",
-                  "D. bool"],
-      "answer": "C"
-  },
-  {
-      "question": "What is the output of the following Python code: 2 ** 3?",
-      "options": ["A. 6",
-                  "B. 8",
-                  "C. 9",
-                  "D. 7"],
-      "answer": "B"
-  },
-  {
-      "question": "What is the output of the following Python code: len([1, 2, 3])?",
-      "options": ["A. 3",
-                  "B. 4",
-                  "C. 5",
-                  "D. 2"],
-      "answer": "A"
-  },
-  {
-      "question": "What is the output of the following Python code: 'hello'[0]?",
-      "options": ["A. h",
-                  "B. e",
-                  "C. l",
-                  "D. 0"],
-      "answer": "A"
-  },
-  {
-      "question": "What is the output of the following Python code: [1, 2, 3] + [4, 5, 6]?",
-      "options": ["A. [1, 2, 3, 4, 5, 6]",
-                  "B. [4, 5, 6, 1, 2, 3]",
-                  "C. [1, 4, 2, 5, 3, 6]",
-                  "D. [1, 2, 3, 4, 5, 6, 7]"],
-      "answer": "A"
-  },
-  {
-      "question": "What is the output of the following Python code: {1: 'one', 2: 'two', 3: 'three'}?",
-      "options": ["A. {'one': 1, 'two': 2, 'three': 3}",
-                  "B. {1: 'one', 2: 'two', 3: 'three'}",
-                  "C. {'one': 1, 2: 'two', 3: 'three'}",
-                  "D. {1: 'one', 2: 'two', 3: 'three', 4: 'four'}"],
-      "answer": "B"
-  },
-  {
-      "question": "What is the output of the following Python code: (1 + 2) * 3?",
-      "options": ["A. 9",
-                  "B. 6",
-                  "C. 7",
-                  "D. 8"],
-      "answer": "A"
-  },
-  {
-      "question": "What is the output of the following Python code: 'hello' * 3?",
-      "options": ["A. 'hellohellohello'",
-                  "B. 'hellohello'",
-                  "C. 'hellohellohellohello'",
-                  "D. 'helhelhel'"],
-      "answer": "A"
-  },
-  {
-      "question": "What is the output of the following Python code: 10 % 3?",
-      "options": ["A. 3",
-                  "B. 1",
-                  "C. 0",
-                  "D. 2"],
-      "answer": "B"
-  },
+    {
+        "question": "What is the output of the following Python code: 5 + 3 * 2?",
+        "answers": ["A. 11","B. 16","C. 6","D. 10"],
+        "correct": 2
+    },
+    {
+        "question": "Which of the following is not a Python data type?",
+        "answers": ["A. int","B. float","C. string","D. bool"],
+        "correct": 2
+    },
+    {   
+        "question": "What is the output of the following Python code: 2 ** 3?",
+        "answers": ["A. 6","B. 8","C. 9","D. 7"],
+        "correct": 1
+    },
+    {
+        "question": "What is the output of the following Python code: len([1, 2, 3])?",
+        "answers": ["A. 3","B. 4","C. 5","D. 2"],
+        "correct": 0
+    },
+    {
+        "question": "What is the output of the following Python code: 'hello'[0]?",
+        "answers": ["A. h","B. e","C. l","D. 0"],
+        "correct": 0
+    },
+    {
+        "question": "What is the output of the following Python code: [1, 2, 3] + [4, 5, 6]?",
+        "answers": ["A. [1, 2, 3, 4, 5, 6]","B. [4, 5, 6, 1, 2, 3]","C. [1, 4, 2, 5, 3, 6]","D. [1, 2, 3, 4, 5, 6, 7]"],
+        "correct": 0
+    },
+    {
+        "question": "What is the output of the following Python code: {1: 'one', 2: 'two', 3: 'three'}?",
+        "answers": ["A. {'one': 1, 'two': 2, 'three': 3}",
+                      "B. {1: 'one', 2: 'two', 3: 'three'}",
+                      "C. {'one': 1, 2: 'two', 3: 'three'}",
+                      "D. {1: 'one', 2: 'two', 3: 'three', 4: 'four'}"],
+        "correct": 1
+    },
+    {
+        "question": "What is the output of the following Python code: (1 + 2) * 3?",
+        "answers": ["A. 9",
+                      "B. 6",
+                      "C. 7",
+                      "D. 8"],
+        "correct": 0
+    },
+    {
+        "question": "What is the output of the following Python code: 'hello' * 3?",
+        "answers": ["A. 'hellohellohello'",
+                      "B. 'hellohello'",
+                      "C. 'hellohellohellohello'",
+                      "D. 'helhelhel'"],
+        "correct": 0
+    },
+    {
+        "question": "What is the output of the following Python code: 10 % 3?",
+        "answers": ["A. 3",
+                      "B. 1",
+                      "C. 0",
+                      "D. 2"],
+        "correct": 1
+    }
 ]
 
-def display_question(question):
-  print(question["question"])
-  for i, option in enumerate(question["options"]):
-      print(f"{chr(i+65)}. {option}")
-  user_answer = input("Enter your answer (A/B/C/D): ").upper()
-  return user_answer
+# Set up the game rules
+money_values = [100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 250000, 500000, 1000000]
+lifelines = ["50/50", "Phone a Friend", "Ask the Audience"]
 
-def check_answer(user_answer, question):
-  if user_answer == question["answer"]:
-      print("Correct!")
-  else:
-      print(f"Wrong! The correct answer is {question['answer']}.")
+# Implement the game logic
+current_money = 0
+current_question = 0
 
-def main():
-  for question in questions:
-      user_answer = display_question(question)
-      check_answer(user_answer, question)
+while current_question < len(questions) and current_money < 1000000:
+    print(f"Current money: {current_money}")
+    question = questions[current_question]
+    print(question["question"])
 
-if __name__ == "__main__":
-  main()
+    for i, answer in enumerate(question["answers"]):
+        print(f"{i+1}. {answer}")
+
+    user_answer = int(input("Enter your answer (1-4): ")) - 1
+
+    if user_answer == question["correct"]:
+        print("Correct!")
+        current_money = money_values[current_question]
+    else:
+        print("Incorrect.")
+        print(f"The correct answer was {question['answers'][question['correct']]}")
+        break
+
+    current_question += 1
+
+    # Implement lifelines here
+    # ...
+
+print(f"Game over! You won ${current_money}.")
